@@ -1,6 +1,6 @@
 create database sitefeiradb;
 
-use sitefeira_db;
+use sitefeiradb;
 
 create table tb_inscricao (
 		id_inscricao				int primary key auto_increment,

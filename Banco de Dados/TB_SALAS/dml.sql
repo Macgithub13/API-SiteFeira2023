@@ -1,6 +1,6 @@
 create database sitefeiradb;
 
-use sitefeira_db;
+use sitefeiradb;
 
 create table TB_salas  (
 
