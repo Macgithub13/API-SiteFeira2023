@@ -46,4 +46,40 @@ endpoint.post('/inserir', async (req, resp) => {
 
 })
 
+endpoint.get('/inscricao/quantidade', async (req,resp) => {
+
+    try{
+
+        const respostaAPI= await selecionarTodos();
+
+        resp.send(respostaAPI.length.toString());
+    }
+
+    catch(err){
+
+        resp.status(404).send({
+
+            erro:err.message
+        });
+    }
+});
+
+endpoint.get('/inscricao/visitantes', async (req,resp) => {
+
+    try{
+
+        const respostaAPI= await selecionarVisitantes();
+
+        resp.send(respostaAPI.length.toString());
+    }
+
+    catch(err){
+
+        resp.status(404).send({
+
+            erro:err.message
+        });
+    }
+});
+
 export default endpoint;
