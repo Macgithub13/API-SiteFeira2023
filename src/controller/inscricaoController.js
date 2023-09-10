@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { inserir } from '../repository/inscricaoRepository.js'
+import { inserir,selecionarTodos,selecionarVisitantes  } from '../repository/inscricaoRepository.js'
 
 
 let endpoint = Router();
